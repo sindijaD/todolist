@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="picture"></div>
+    <div class="container">
+      <div class="innerCont">
+        <h1>To do list</h1>
+        <form target="_self" onsubmit="return false">
+          <input
+            type="text"
+            value=""
+            id="addNewItem"
+            placeholder="enter text"
+            class="entertext"
+          />
+          <button id="btadd" class="submitbutton">add</button>
+        </form>
+
+        <span class="text_danger"></span>
+      </div>
+
+      <div class="buttomcont">
+        <ul class="list_group">
+          <!-- <button class="removeitem">-</button> -->
+          <!-- <li> something</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
